@@ -1,0 +1,36 @@
+{
+    "name": "bit3/assetic-css-crush",
+    "description": "css-crush filter for kriswallsmith/assetic",
+    "keywords": ["assets", "compression", "minification", "css-crush", "css"],
+    "homepage": "http://bit3.de",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kris Wallsmith",
+            "email": "kris.wallsmith@gmail.com",
+            "homepage": "http://kriswallsmith.net/"
+        },
+		{
+			"name":"Tristan Lins",
+			"email":"tristan.lins@bit3.de",
+			"homepage":"http://bit3.de",
+			"role":"Developer"
+		}
+    ],
+	"support":{
+		"email":"info@bit3.de",
+		"issues":"https://github.com/bit3/assetic-css-crush/issues",
+		"wiki":"https://github.com/bit3/assetic-css-crush/wiki",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/bit3/assetic-css-crush"
+	},
+    "require": {
+        "php": ">=5.3.1",
+        "css-crush/css-crush": "1.*",
+		"kriswallsmith/assetic": "1.*"
+    },
+    "autoload": {
+        "psr-0": { "Assetic": "src/" }
+    }
+}
