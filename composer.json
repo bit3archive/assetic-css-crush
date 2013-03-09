@@ -3,6 +3,7 @@
     "description": "css-crush filter for kriswallsmith/assetic",
     "keywords": ["assets", "compression", "minification", "css-crush", "css"],
     "homepage": "http://bit3.de",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "authors": [
