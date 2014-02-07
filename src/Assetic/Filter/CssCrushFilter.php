@@ -84,7 +84,7 @@ class CssCrushFilter implements FilterInterface
 
 		// process the asset
 		\CssCrush::$config->docRoot = $asset->getSourceRoot();
-		$output                     = \CssCrush::string($asset->getContent(), $options);
+		$output                     = (string) \CssCrush::string($asset->getContent(), $options);
 		$asset->setContent($output);
 
 		// cleanup
