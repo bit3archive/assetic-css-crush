@@ -94,5 +94,5 @@ class CssCrushFilter implements FilterInterface
 	public function filterDump(AssetInterface $asset)
 	{
 		$this->filterLoad($asset);
-	}
+	} 
 }
