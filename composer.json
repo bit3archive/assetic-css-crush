@@ -28,7 +28,7 @@
 	},
     "require": {
         "php": ">=5.3.1",
-        "css-crush/css-crush": "1.*",
+        "css-crush/css-crush": "dev-master",
 		"kriswallsmith/assetic": "1.*"
     },
     "autoload": {

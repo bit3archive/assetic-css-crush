@@ -13,7 +13,7 @@ namespace Assetic\Filter;
 
 use Assetic\Asset\AssetInterface;
 use Assetic\Filter\FilterInterface;
-
+use CssCrush\CssCrush;
 /**
  * Loads CssCrush files.
  *
@@ -80,19 +80,19 @@ class CssCrushFilter implements FilterInterface
 		}
 
 		// remember the previous document root
-		$snapshot = \CssCrush::$config->docRoot;
+		$snapshot = CssCrush::$config->docRoot;
 
 		// process the asset
-		\CssCrush::$config->docRoot = $asset->getSourceRoot();
-		$output                     = (string) \CssCrush::string($asset->getContent(), $options);
+		CssCrush::$config->docRoot = $asset->getSourceRoot();
+		$output                     = (string) CssCrush::string($asset->getContent(), $options);
 		$asset->setContent($output);
 
 		// cleanup
-		\CssCrush::$config->docRoot = $snapshot;
+		CssCrush::$config->docRoot = $snapshot;
 	}
 
 	public function filterDump(AssetInterface $asset)
 	{
 		$this->filterLoad($asset);
-	}
+	} 
 }
