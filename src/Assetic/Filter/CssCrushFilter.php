@@ -13,7 +13,7 @@ namespace Assetic\Filter;
 
 use Assetic\Asset\AssetInterface;
 use Assetic\Filter\FilterInterface;
-
+use CssCrush\CssCrush;
 /**
  * Loads CssCrush files.
  *
